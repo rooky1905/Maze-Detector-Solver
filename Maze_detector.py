@@ -152,9 +152,7 @@ if __name__ == "__main__":
 
         if (type(maze_array) is list) and (len(maze_array) == 10):
 
-            cv2.imshow('warped_img_0',  warped_img)
-            cv2.waitKey(0)
-            cv2.destroyAllWindows()
+            
 
             print('\nEncoded Maze Array = %s' % (maze_array))
             
@@ -162,3 +160,7 @@ if __name__ == "__main__":
             print()
             print(f"********* THE PATH FROM {st} --> {en} is ***************************")
             print(final)
+
+            cv2.imshow('warped_img_0',  warped_img)
+            cv2.waitKey(0)
+            cv2.destroyAllWindows()
